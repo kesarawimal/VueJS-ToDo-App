@@ -1,12 +1,13 @@
 <template>
   <div id="app">
-    <router-view  v-bind:todos="todos"  :todo.sync="todo"></router-view>
+    <todo-list v-bind:todos="todos"></todo-list>
     <create-todo v-on:create-todo="createTodo"></create-todo>
   </div>
 </template>
 
 <script>
 import CreateTodo from '@/components/CreateTodo'
+import TodoList from '@/components/TodoList';
 
 export default {
   name: 'App',
@@ -33,6 +34,7 @@ export default {
   },
   components: {
     CreateTodo,
+    TodoList,
   },
   methods: {
     createTodo(newTodo) {
