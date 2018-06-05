@@ -1,6 +1,5 @@
 <template>
   <div class='ui centered card'>
-    <!-- // Todo shown when we are not in editing mode. -->
     <div class="content" v-show="!isEditing">
       <div class='header'>
           {{ todo.title }}
@@ -17,7 +16,6 @@
         </span>
       </div>
     </div>
-    <!-- // form is visible when we are in editing mode -->
     <div class="content" v-show="isEditing">
       <div class='ui form'>
         <div class='field'>
