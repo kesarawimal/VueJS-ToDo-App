@@ -39,7 +39,6 @@ export default {
   methods: {
     createTodo(newTodo) {
       this.todos.push(newTodo);
-      sweetalert('Success!', 'To-Do created!', 'success');
     },
   },
 }
